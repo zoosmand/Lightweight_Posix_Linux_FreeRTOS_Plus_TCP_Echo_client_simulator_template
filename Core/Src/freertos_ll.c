@@ -11,7 +11,7 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
-#include "freertos.h"
+#include "freertos_ll.h"
 
 /* Private variables ---------------------------------------------------------*/
 static BaseType_t xTraceRunning = pdTRUE;
@@ -62,7 +62,7 @@ void vApplicationMallocFailedHook(void) {
   * @return None
   */
 void vApplicationIdleHook(void) {
-  usleep(15000);
+  nanosleep((struct timespec[]){{0, 15000L}},NULL);
   traceOnEnter();
 }
 

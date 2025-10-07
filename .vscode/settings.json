@@ -1,6 +1,7 @@
 {
     "C_Cpp.intelliSenseEngineFallback": "Enabled",
     "files.associations": {
+        "*.dbclient-js": "javascript",
         "cstdio": "c",
         "freertos.h": "c",
         "main.h": "c",
@@ -16,6 +17,7 @@
         "streambuf": "c",
         "tuple": "c",
         "type_traits": "c",
-        "utility": "c"
+        "utility": "c",
+        "unistd.h": "c"
     }
 }

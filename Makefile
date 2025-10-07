@@ -25,7 +25,6 @@ INCLUDE_DIRS += -I${CORE_DIR}/Inc
 INCLUDE_DIRS += -I${FREERTOS_DIR}/Source/include
 INCLUDE_DIRS += -I${FREERTOS_DIR}/Source/portable/ThirdParty/GCC/Posix
 INCLUDE_DIRS += -I${FREERTOS_DIR}/Source/portable/ThirdParty/GCC/Posix/utils
-INCLUDE_DIRS += -I${FREERTOS_DIR}/Demo/Common/include
 INCLUDE_DIRS += -I${FREERTOS_PLUS_DIR}/Source/FreeRTOS-Plus-Trace/Include
 INCLUDE_DIRS += -I${FREERTOS_PLUS_DIR}/Source/FreeRTOS-Plus-TCP/portable/NetworkInterface/linux/
 INCLUDE_DIRS += -I${FREERTOS_PLUS_DIR}/Source/FreeRTOS-Plus-TCP/include/
@@ -65,7 +64,7 @@ SOURCE_FILES += ${FREERTOS_PLUS_DIR}/Source/FreeRTOS-Plus-Trace/streamports/File
 # ------------------------------------------------------------------- #
 C_DEFS += -DprojCOVERAGE_TEST=0
 C_DEFS += -D_WINDOWS_
-C_DEFS += -DDEBUG
+C_DEFS += -DDEBUG -D_BSD_SOURCE
 
 CFLAGS := -ggdb3 ${OPT} $(C_DEFS)
 

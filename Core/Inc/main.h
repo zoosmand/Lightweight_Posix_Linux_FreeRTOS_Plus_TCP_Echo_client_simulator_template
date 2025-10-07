@@ -26,7 +26,10 @@
 #include <sys/time.h>
 
 /* FreeRTOS kernel includes --------------------------------------------------*/
+#include "FreeRTOSConfig.h"
+#include "FreeRTOSIPConfig.h"
 #include "FreeRTOS.h"
+#include "list.h"
 #include "task.h"
 #include "semphr.h"
 #include "queue.h"
@@ -36,6 +39,7 @@
 #include "FreeRTOS_Sockets.h"
 
 /* Local includes ------------------------------------------------------------*/
+#include "freertos_ll.h"
 #include "console.h"
 #include "srv_echo.h"
 #include "srv_echo_client.h"

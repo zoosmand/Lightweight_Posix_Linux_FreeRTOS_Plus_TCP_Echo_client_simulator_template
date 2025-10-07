@@ -1,6 +1,36 @@
 {
     "configurations": [
         {
+            "name": "MacOS",
+            "includePath": [
+                "${workspaceRoot}/FreeRTOS/Source/include",
+                "${workspaceRoot}/FreeRTOS/Source/portable/ThirdParty/GCC/Posix",
+                "${workspaceRoot}/FreeRTOS/Source/portable/ThirdParty/GCC/Posix/utils",
+                "${workspaceRoot}/FreeRTOS/Source/portable/MemMang",
+                "${workspaceRoot}/FreeRTOS-Plus/Source/FreeRTOS-Plus-Trace/Include",
+                "${workspaceRoot}/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/include",
+                "${workspaceRoot}/FreeRTOS-Plus/Source/FreeRTOS-Plus-TCP/portable/Compiler/GCC",
+                "${workspaceRoot}/Core/Inc",
+                "${workspaceRoot}/Core/Src"
+            ],
+            "defines": [
+                "DEBUG",
+                "projCOVERAGE_TEST=0"
+            ],
+            "intelliSenseMode": "macos-clang-arm64",
+            "cStandard": "c23",
+            "cppStandard": "c++23",
+            "browse": {
+                "path": [
+                    "${workspaceRoot}",
+                    "${env:VSARM}/arm-gcc",
+                    "${env:VSARM}/cache"
+                ],
+                "limitSymbolsToIncludedHeaders": false,
+                "databaseFilename": ""
+            }
+        },
+        {
             "name": "Linux",
             "includePath": [
                 "/usr/include/x86_64-linux-gnu",
