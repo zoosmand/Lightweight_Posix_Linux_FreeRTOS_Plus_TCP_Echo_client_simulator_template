@@ -1,23 +1,6 @@
 {
-    "C_Cpp.intelliSenseEngineFallback": "Enabled",
     "files.associations": {
-        "*.dbclient-js": "javascript",
-        "cstdio": "c",
-        "freertos.h": "c",
-        "main.h": "c",
-        "usart.h": "c",
-        "freertos_sockets.h": "c",
-        "freertos_ip.h": "c",
-        "pthread.h": "c",
-        "time.h": "c",
-        "tcpechoclient_singletasks.h": "c",
-        "*.tcc": "c",
-        "limits": "c",
-        "numeric": "c",
-        "streambuf": "c",
-        "tuple": "c",
-        "type_traits": "c",
-        "utility": "c",
-        "unistd.h": "c"
+        "*.c": "c",
+        "*.h": "c"
     }
 }

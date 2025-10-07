@@ -62,3 +62,4 @@ build
 # vscode states
 *state.json
 
+*.dump

@@ -6,7 +6,7 @@
         {
             "label": "Make Firmware",
             "type": "shell",
-            "command": "make TARGET=${workspaceFolderBasename}",
+            "command": "make TARGET=${workspaceFolderBasename} -j CC=clang C23=clang++",
             "options": {
                 "cwd": "${workspaceRoot}"
             },

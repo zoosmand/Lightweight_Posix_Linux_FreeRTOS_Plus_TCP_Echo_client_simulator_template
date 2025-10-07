@@ -11,11 +11,12 @@
         "program": "${workspaceFolder}/build/${workspaceFolderBasename}",
         "args": [
         ],
+        "miDebuggerArgs": "",
         "stopAtEntry": false,
         "cwd": "${workspaceFolder}/build",
         "environment": [],
         "externalConsole": false,
-        "miDebuggerPath": "/opt/homebrew/Cellar/gdb/16.3/bin/gdb",
+        "miDebuggerPath": "${env:HOME}/bin/gdb_sudo",
         "MIMode": "gdb",
         "setupCommands": [
             {

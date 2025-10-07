@@ -22,9 +22,7 @@
             "cppStandard": "c++23",
             "browse": {
                 "path": [
-                    "${workspaceRoot}",
-                    "${env:VSARM}/arm-gcc",
-                    "${env:VSARM}/cache"
+                    "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": false,
                 "databaseFilename": ""
@@ -49,14 +47,12 @@
                 "DEBUG",
                 "projCOVERAGE_TEST=0"
             ],
-            "intelliSenseMode": "gcc-arm",
-            "cStandard": "c11",
-            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "cStandard": "c23",
+            "cppStandard": "c++23",
             "browse": {
                 "path": [
-                    "${workspaceRoot}",
-                    "${env:VSARM}/arm-gcc",
-                    "${env:VSARM}/cache"
+                    "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": false,
                 "databaseFilename": ""
