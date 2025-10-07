@@ -6,7 +6,12 @@
         {
             "label": "Make Firmware",
             "type": "shell",
-            "command": "make TARGET=${workspaceFolderBasename} -j CC=clang C23=clang++",
+            "osx": {
+                "command": "make TARGET=${workspaceFolderBasename} -j$(sysctl -n hw.ncpu) CC=clang C23=clang++",
+            },
+            "linux": {
+                "command": "make TARGET=${workspaceFolderBasename} -j$(nproc)",
+            },
             "options": {
                 "cwd": "${workspaceRoot}"
             },

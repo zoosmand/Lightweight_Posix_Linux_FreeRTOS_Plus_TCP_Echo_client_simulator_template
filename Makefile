@@ -64,7 +64,7 @@ SOURCE_FILES += ${FREERTOS_PLUS_DIR}/Source/FreeRTOS-Plus-Trace/streamports/File
 # ------------------------------------------------------------------- #
 C_DEFS += -DprojCOVERAGE_TEST=0
 C_DEFS += -D_WINDOWS_
-C_DEFS += -DDEBUG -D_BSD_SOURCE
+C_DEFS += -DDEBUG -D_DEFAULT_SOURCE
 
 CFLAGS := -ggdb3 ${OPT} $(C_DEFS)
 
